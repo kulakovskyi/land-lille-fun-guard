@@ -1,7 +1,11 @@
+const logo = document.querySelector('.land__logo');
+logo.scrollIntoView({block: "center", behavior: "smooth"});
+
 let body = document.querySelector('body')
 let landStart = document.querySelector('.land__start');
 let landContent = document.querySelector('.land__content');
 let slides = document.querySelectorAll('.slide');
+
 
 
 window.setTimeout(hiddenStart, 3000);

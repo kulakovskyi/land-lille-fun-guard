@@ -54,6 +54,9 @@ body
     &._hidden
       opacity: 0
       visibility: hidden
+    &-wrap
+      position: relative
+      z-index: 4
     &::before
       content: ''
       position: absolute
@@ -137,6 +140,8 @@ body
     &._hidden
       visibility: hidden
       opacity: 0
+    &-container
+      margin: 0 0 30px 0
     &-slides
       max-width: 740px
     &-bonus
@@ -179,8 +184,6 @@ body
           width: 94%
           top: -17px
           left: 10px
-
-
       &-copy
         cursor: pointer
         position: absolute

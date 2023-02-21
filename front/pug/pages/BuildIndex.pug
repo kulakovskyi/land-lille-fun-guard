@@ -4,58 +4,60 @@
     .land__palm-two
     .land
         .land__start
-            .land__start-top
-                picture
-                    source(media="(max-width: 600px) and (orientation: portrait)" srcset="img/start-top-mob.png")
-                    source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/start-top-mob.png")
-                    source(media="(min-width: 601px) and (max-width: 1024px) and (orientation: portrait)" srcset="img/star-top-desc.png")
-                    source(media="(min-width: 601px) and (orientation: landscape)" srcset="img/star-top-desc.png")
-                    img(src="img/star-top-desc.png" alt="Favbet")
-            .land__start-bottom
-                picture
-                    source(media="(max-width: 600px) and (orientation: portrait)" srcset="img/start-mob.png")
-                    source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/start-mob.png")
-                    source(media="(min-width: 601px) and (max-width: 1024px) and (orientation: portrait)" srcset="img/start-desc.png")
-                    source(media="(min-width: 601px) and (orientation: landscape)" srcset="img/start-desc.png")
-                    img(src="img/start-desc.png" alt="Favbet")
+            .land__start-wrap
+                .land__start-top
+                    picture
+                        source(media="(max-width: 600px) and (orientation: portrait)" srcset="img/start-top-mob.png")
+                        source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/start-top-mob.png")
+                        source(media="(min-width: 601px) and (max-width: 1024px) and (orientation: portrait)" srcset="img/star-top-desc.png")
+                        source(media="(min-width: 601px) and (orientation: landscape)" srcset="img/star-top-desc.png")
+                        img(src="img/star-top-desc.png" alt="Favbet")
+                .land__start-bottom
+                    picture
+                        source(media="(max-width: 600px) and (orientation: portrait)" srcset="img/start-mob.png")
+                        source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/start-mob.png")
+                        source(media="(min-width: 601px) and (max-width: 1024px) and (orientation: portrait)" srcset="img/start-desc.png")
+                        source(media="(min-width: 601px) and (orientation: landscape)" srcset="img/start-desc.png")
+                        img(src="img/start-desc.png" alt="Favbet")
 
         .land__content._hidden
             .land__content-wrapper
-                .land__content-slides.slides
-                    .land__content-slides-item.slide.showing
-                        picture
-                            source(media="(max-width: 600px) and (orientation: portrait)" srcset="img/girl1-mob.png")
-                            source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/girl1-mob.png")
-                            source(media="(min-width: 601px) and (max-width: 1024px) and (orientation: portrait)" srcset="img/girl1-desc.png")
-                            source(media="(min-width: 601px) and (orientation: landscape)" srcset="img/girl1-desc.png")
-                            img(src="img/girl1-desc.png" alt="Favbet")
-                    .land__content-slides-item.slide
-                        picture
-                            source(media="(max-width: 600px) and (orientation: portrait)" srcset="img/girl2-mob.png")
-                            source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/girl2-mob.png")
-                            source(media="(min-width: 601px) and (max-width: 1024px) and (orientation: portrait)" srcset="img/girl2-desc.png")
-                            source(media="(min-width: 601px) and (orientation: landscape)" srcset="img/girl2-desc.png")
-                            img(src="img/girl2-desc.png" alt="Favbet")
-                    .land__content-slides-item.slide
-                        picture
-                            source(media="(max-width: 600px) and (orientation: portrait)" srcset="img/girl3-mob.png")
-                            source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/girl3-mob.png")
-                            source(media="(min-width: 601px) and (max-width: 1024px) and (orientation: portrait)" srcset="img/girl3-desc.png")
-                            source(media="(min-width: 601px) and (orientation: landscape)" srcset="img/girl3-desc.png")
-                            img(src="img/girl3-desc.png" alt="Favbet")
-                .land__content-bonus
-                    .land__content-bonus-text promo kod
-                    .land__content-bonus-promo
-                        picture
-                            source(media="(max-width: 600px) and (orientation: portrait)" srcset="img/fun100-mob.png")
-                            source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/fun100-mob.png")
-                            source(media="(min-width: 601px) and (max-width: 1024px) and (orientation: portrait)" srcset="img/fun100.png")
-                            source(media="(min-width: 601px) and (orientation: landscape)" srcset="img/fun100.png")
-                            img(src="img/fun100.png" alt="Favbet")
-                        .land__content-bonus-copy
-                        .land__content-bonus-copy-text kopirano
+                .land__content-container
+                    .land__content-slides.slides
+                        .land__content-slides-item.slide.showing
+                            picture
+                                source(media="(max-width: 600px) and (orientation: portrait)" srcset="img/girl1-mob.png")
+                                source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/girl1-mob.png")
+                                source(media="(min-width: 601px) and (max-width: 1024px) and (orientation: portrait)" srcset="img/girl1-desc.png")
+                                source(media="(min-width: 601px) and (orientation: landscape)" srcset="img/girl1-desc.png")
+                                img(src="img/girl1-desc.png" alt="Favbet")
+                        .land__content-slides-item.slide
+                            picture
+                                source(media="(max-width: 600px) and (orientation: portrait)" srcset="img/girl2-mob.png")
+                                source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/girl2-mob.png")
+                                source(media="(min-width: 601px) and (max-width: 1024px) and (orientation: portrait)" srcset="img/girl2-desc.png")
+                                source(media="(min-width: 601px) and (orientation: landscape)" srcset="img/girl2-desc.png")
+                                img(src="img/girl2-desc.png" alt="Favbet")
+                        .land__content-slides-item.slide
+                            picture
+                                source(media="(max-width: 600px) and (orientation: portrait)" srcset="img/girl3-mob.png")
+                                source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/girl3-mob.png")
+                                source(media="(min-width: 601px) and (max-width: 1024px) and (orientation: portrait)" srcset="img/girl3-desc.png")
+                                source(media="(min-width: 601px) and (orientation: landscape)" srcset="img/girl3-desc.png")
+                                img(src="img/girl3-desc.png" alt="Favbet")
+                    .land__content-bonus
+                        .land__content-bonus-text promo kod
+                        .land__content-bonus-promo
+                            picture
+                                source(media="(max-width: 600px) and (orientation: portrait)" srcset="img/fun100-mob.png")
+                                source(media="(max-width: 920px) and (orientation: landscape) and (max-height: 450px)" srcset="img/fun100-mob.png")
+                                source(media="(min-width: 601px) and (max-width: 1024px) and (orientation: portrait)" srcset="img/fun100.png")
+                                source(media="(min-width: 601px) and (orientation: landscape)" srcset="img/fun100.png")
+                                img(src="img/fun100.png" alt="Favbet")
+                            .land__content-bonus-copy
+                            .land__content-bonus-copy-text kopirano
 
-                a(href='#').land__content-link
+                    a(href='#').land__content-link
                 .land__content-rules
                     .land__content-rules-title Osvoji 100 besplatnih vrtnji #[br] s promo kodom fun100
                     ul.land__content-rules-list
