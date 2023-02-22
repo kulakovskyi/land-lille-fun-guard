@@ -1,7 +1,9 @@
-const logo = document.querySelector('.land__logo');
+let logo = document.querySelector('.land__logo');
+let body = document.querySelector('body');
 logo.scrollIntoView({block: "center", behavior: "smooth"});
+body.classList.add('_lock')
 
-let body = document.querySelector('body')
+
 let landStart = document.querySelector('.land__start');
 let landContent = document.querySelector('.land__content');
 let slides = document.querySelectorAll('.slide');
