@@ -636,7 +636,7 @@
           &:nth-child(5)
             margin: 0 0 20px 0
 
-@media screen and (max-width: 385px) and (orientation: portrait)
+@media screen and (max-width: 378px) and (orientation: portrait)
   .land
     &__footer
       &-item
@@ -672,4 +672,186 @@
     &__footer
       &-list
         transform: scale(.85)
+
+/****************************************LANDSCAPE************************************/
+
+@media screen and (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+  .land
+    &__start
+      &::before
+        content: none
+      &-wrap
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -39%) scale(.7)
+      &-top
+        min-width: 310px
+      &-bottom
+        max-width: 237px
+        margin: -57px auto 0 auto
+        left: 6px
+    &__logo
+      width: 177px
+    &__palm
+      &-one
+        width: 267px
+        height: 314px
+      &-two
+        width: 579px
+        height: 612px
+        right: -342px
+        top: -1%
+    &__content
+      &-container
+        transform: scale(0.35)
+        margin: 0 0 -672px 0
+      &-link
+        transform: scale(1.3)
+        top: 30px
+        &::before
+          transform: scale(.9)
+          top: 26px
+          right: -64px
+      &-bonus
+        &::before
+          width: 150%
+          top: 137%
+        &-promo
+          img
+            top: -69px
+      &-rules
+        transform: scale(.8)
+        width: 375px
+        height: 500px
+        margin: 0 auto 144px auto
+        padding: 39px 0 0
+        &-enjoy
+          transform: scale(0.25)
+          left: 459px
+          top: -151px
+        &-title
+          font-size: 22px
+          line-height: 27px
+          text-shadow: 1px 1px 0px #524A2B
+          margin: 0 0 28px 0
+        &-list
+          max-width: 255px
+          margin: 0 0 18px 0
+        &-item
+          text-shadow: 1px 1px 0px #6C6857
+          padding: 0 0 0 53px
+          font-size: 13px
+          line-height: 18px
+          min-height: 26px
+          &:not(:last-child)
+            margin: 0 0 22px 0
+          &:first-child::after
+            width: 33px
+            height: 33px
+          &:nth-child(2)::after
+            width: 41px
+            height: 35px
+          &:nth-child(3)::after
+            width: 40px
+            height: 30px
+          &:nth-child(4)::after
+            width: 41px
+            height: 30px
+        &-info
+          font-size: 12px
+          line-height: 16px
+    &__footer
+      padding: 46px 0 15px
+      &-container
+        &::before
+          top: -63px
+          height: 57px
+      &-list
+        margin: 0
+      &-item
+        img
+          margin-top: 14px
+          max-width: 20px
+        &-left
+          font-size: 44px
+          line-height: 51px
+          text-shadow: 2px 2px 0px #524A2B
+        &-right
+          margin: 0
+          font-size: 14px
+          line-height: 21px
+        &:not(:last-child)
+          margin: 0 0 0 0
+        &:first-child
+          align-items: flex-start
+          margin: 0 20px 0 0
+        &:nth-child(2)
+          margin: 0 13px 0 0
+        &:nth-child(3)
+          margin: 0 20px 0 0
+          .land__footer-item-right
+            max-width: 100%
+          .land__footer-item-left
+            white-space: nowrap
+          .land__footer-item-left::after
+            width: 35px
+            height: 33px
+          &::before
+            bottom: 24px
+            left: 8px
+            width: 62px
+            height: 13px
+            font-size: 12px
+            line-height: 14px
+        &:nth-child(4)
+          margin: 0 10px 0 0
+        &:nth-child(5)
+          .land__footer-item-right
+            max-width: 100px
+            text-align: end
+            span
+              padding: 2px 3px 1px
+              font-size: 12px
+              line-height: 14px
+      &-lic
+        transform: scale(.75)
+        max-width: 275px
+        text-align: center
+        img
+          &:not(:last-child)
+            margin: 0 20px 20px 0
+          &:nth-child(5)
+            margin: 0 0 20px 0
+
+
+@media screen and (max-width: 920px) and (orientation: landscape) and (max-height: 380px)
+  .land
+    &__start
+      &-wrap
+        transform: translate(-50%, -34%) scale(.6)
+    &__content
+      &-container
+        transform: scale(0.3)
+        margin: 10px 0 -711px 0
+      &-link
+        &::before
+          top: 44px
+
+
+
+@media screen and (max-width: 920px) and (orientation: landscape) and (max-height: 330px)
+  .land
+    &__start
+      &-wrap
+        transform: translate(-50%, -24%) scale(.45)
+    &__content
+      &-container
+        transform: scale(0.25)
+        margin: 10px 0 -767px 0
+      &-link
+        &::before
+          top: 44px
+      &-rules
+        transform: scale(.75)
 
